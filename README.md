@@ -102,7 +102,7 @@ npx expo start
 
 ## 🔗 Link Terkait
 
-- **Video Demonstrasi:** [Tonton Demo]()
+- **Video Demonstrasi:** [Tonton Demo](https://drive.google.com/drive/folders/1R_EMiC1kD78xMR1YTJfaoamC6dxoMDzx)
 
 ---
 
