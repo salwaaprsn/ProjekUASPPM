@@ -26,7 +26,7 @@ const db = SQLite.openDatabaseSync('antigravity.db');
 
 export default function AkunScreen() {
     const router = useRouter();
-    const { t, colors, theme } = useApp();
+    const { t, colors, theme, setIsLoggedIn, setIsGuest } = useApp();
     const [mode, setMode] = useState<'main' | 'edit'>('main');
     const [isTermsVisible, setIsTermsVisible] = useState(false);
 
@@ -79,6 +79,11 @@ export default function AkunScreen() {
                 text: t('logout'),
                 style: "destructive",
                 onPress: () => {
+                    setIsLoggedIn(false);
+                    setIsGuest(false);
+                    while (router.canGoBack()) {
+                        router.back();
+                    }
                     router.replace('/');
                 }
             }

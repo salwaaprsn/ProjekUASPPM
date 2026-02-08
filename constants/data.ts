@@ -38,7 +38,7 @@ export const MENU_API: MenuItem[] = [
     name: 'Mocha Fusion',
     price: '29.000',
     category: 'Coffee',
-    image: 'https://images.unsplash.com/photo-1534706936160-d5ee67737249?q=80&w=500',
+    image: 'https://plus.unsplash.com/premium_photo-1663012978924-5bfd443ac932?q=80&w',
     desc: 'Perpaduan sempurna antara espresso, susu, dan sirup cokelat premium.'
   },
   {
@@ -64,7 +64,7 @@ export const MENU_API: MenuItem[] = [
     name: 'Matcha Latte',
     price: '25.000',
     category: 'Non-Coffee',
-    image: 'https://images.unsplash.com/photo-1536819114556-1e10f967fb61?q=80&w=500',
+    image: 'https://images.unsplash.com/photo-1515823064-d6e0c04616a7?q=80&w',
     desc: 'Teh hijau Jepang murni dicampur dengan susu segar.'
   },
   {
@@ -72,7 +72,7 @@ export const MENU_API: MenuItem[] = [
     name: 'Dark Chocolate',
     price: '24.000',
     category: 'Non-Coffee',
-    image: 'https://images.unsplash.com/photo-1541491008689-b5d3c6615e83?q=80&w=500',
+    image: 'https://images.unsplash.com/photo-1517578239113-b03992dcdd25?q=80&w',
     desc: 'Cokelat hitam pekat yang tidak terlalu manis namun sangat creamy.'
   },
   {
@@ -80,7 +80,7 @@ export const MENU_API: MenuItem[] = [
     name: 'Red Velvet',
     price: '26.000',
     category: 'Non-Coffee',
-    image: 'https://images.unsplash.com/photo-1615478503562-ec2e8aa0e24e?q=80&w=500',
+    image: 'https://img.lazcdn.com/g/p/f25d3eabf2400e5bb1f255725d408652.jpg_720x720q80.jpg',
     desc: 'Minuman rasa kue red velvet yang lembut di lidah.'
   },
   {
@@ -88,7 +88,7 @@ export const MENU_API: MenuItem[] = [
     name: 'Taro Latte',
     price: '24.000',
     category: 'Non-Coffee',
-    image: 'https://images.unsplash.com/photo-1634603410943-16a70460c57c?q=80&w=500',
+    image: 'https://minumankekinian.id/wp-content/uploads/2025/11/Sering-Dijadikan-Rasa-Minuman-Inilah-Manfaat-Taro-Bagi-Kesehatan-yang-Jarang-Diketahui.jpg',
     desc: 'Rasa talas ungu yang unik dan manis.'
   },
   {
@@ -96,15 +96,15 @@ export const MENU_API: MenuItem[] = [
     name: 'Strawberry Milk',
     price: '27.000',
     category: 'Non-Coffee',
-    image: 'https://images.unsplash.com/photo-1546173159-315724a31696?q=80&w=500',
+    image: 'https://images.unsplash.com/photo-1579954115545-a95591f28bfc?q=80&w',
     desc: 'Susu segar dengan selai strawberry buatan sendiri dan potongan buah asli.'
   },
   {
     id: '16',
-    name: 'Thai Tea Premium',
+    name: 'Thai Tea',
     price: '22.000',
     category: 'Non-Coffee',
-    image: 'https://images.unsplash.com/photo-1621263764491-72740523477c?q=80&w=500',
+    image: 'https://images.unsplash.com/photo-1644203541701-0c534473e616?q=80&w',
     desc: 'Teh Thailand autentik dengan campuran susu kental manis.'
   },
   {
@@ -128,7 +128,7 @@ export const MENU_API: MenuItem[] = [
     name: 'Mango Breeze',
     price: '25.000',
     category: 'Non-Coffee',
-    image: 'https://images.unsplash.com/photo-1553177595-4de2bb0842b9?q=80&w=500',
+    image: 'https://images.unsplash.com/photo-1697642452436-9c40773cbcbb?q=80&w',
     desc: 'Es mangga segar dengan perasan jeruk nipis dan daun mint.'
   },
   {
@@ -136,7 +136,7 @@ export const MENU_API: MenuItem[] = [
     name: 'Avocado Smoothies',
     price: '28.000',
     category: 'Non-Coffee',
-    image: 'https://images.unsplash.com/photo-1610485303248-03482701f6ca?q=80&w=500',
+    image: 'https://plus.unsplash.com/premium_photo-1726852751697-2d1157466e44?q=80&w',
     desc: 'Smoothies alpukat kental dengan saus cokelat di pinggir gelas.'
   },
 
@@ -154,7 +154,7 @@ export const MENU_API: MenuItem[] = [
     name: 'Chocolate Muffin',
     price: '20.000',
     category: 'Dessert',
-    image: 'https://images.unsplash.com/photo-1585504198199-20277593b94f?q=80&w=500',
+    image: 'https://images.unsplash.com/photo-1616151030755-76f6cd987a06?q=80&w',
     desc: 'Kue muffin lembut dengan potongan cokelat melimpah.'
   },
   {
@@ -162,15 +162,15 @@ export const MENU_API: MenuItem[] = [
     name: 'Cheese Cake',
     price: '32.000',
     category: 'Dessert',
-    image: 'https://images.unsplash.com/photo-1524351159078-8be8723c769a?q=80&w=500',
+    image: 'https://images.unsplash.com/photo-1635327173758-85badf17f995?q=80&w',
     desc: 'Kue keju lembut dengan tekstur yang melt di mulut.'
   },
   {
     id: '24',
-    name: 'Tiramisu Cup',
+    name: 'Tiramisu Cake',
     price: '30.000',
     category: 'Dessert',
-    image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80&w=500',
+    image: 'https://plus.unsplash.com/premium_photo-1695028378225-97fbe39df62a?q=80&w',
     desc: 'Dessert Italia klasik dengan aroma kopi yang kuat.'
   },
   {
@@ -178,7 +178,7 @@ export const MENU_API: MenuItem[] = [
     name: 'Almond Danish',
     price: '22.000',
     category: 'Dessert',
-    image: 'https://images.unsplash.com/photo-1608198399988-341f712c3711?q=80&w=500',
+    image: 'https://images.unsplash.com/photo-1613995163959-60a6a0c65ede?q=80&w',
     desc: 'Roti manis dengan taburan kacang almond renyah.'
   },
   {
@@ -186,7 +186,7 @@ export const MENU_API: MenuItem[] = [
     name: 'Brownies Ice Cream',
     price: '28.000',
     category: 'Dessert',
-    image: 'https://images.unsplash.com/photo-1564355808539-22fda35bed7e?q=80&w=500',
+    image: 'https://images.unsplash.com/photo-1702827402870-7c33dc7b67be?q=80&w',
     desc: 'Brownies panggang hangat disajikan dengan es krim vanilla.'
   },
   {
@@ -194,7 +194,7 @@ export const MENU_API: MenuItem[] = [
     name: 'Cinnamon Roll',
     price: '21.000',
     category: 'Dessert',
-    image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=500',
+    image: 'https://images.unsplash.com/photo-1583527976767-5399024eeb05?q=80&w',
     desc: 'Roti gulung kayu manis dengan icing gula yang manis.'
   },
   {

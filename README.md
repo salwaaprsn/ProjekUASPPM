@@ -1,50 +1,58 @@
-# Welcome to your Expo app 👋
+# FieldCoffee ☕
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+FieldCoffee adalah aplikasi mobile modern yang dikembangkan dengan **React Native** dan **Expo**, menghadirkan pengalaman pemesanan kopi yang interaktif dan mulus. Proyek ini telah ditingkatkan dengan fitur-fitur teknis utama sebagai bagian dari penilaian pengembangan aplikasi.
 
-## Get started
+## 🌟 Fitur Utama (Highlight Penilaian)
 
-1. Install dependencies
+Berikut adalah implementasi teknis utama yang telah ditambahkan:
 
-   ```bash
-   npm install
-   ```
+### 1. 🧪 Testing (Unit & Integration)
+Implementasi pengujian otomatis untuk memastikan stabilitas aplikasi.
+- **Framework**: Menggunakan `Jest` dan `React Test Renderer`.
+- **Unit Test**: Pengujian komponen individual (contoh: `__tests__/TermsModal-test.tsx`).
+- **Snapshot Test**: Memastikan UI tidak berubah secara tidak sengaja (`__tests__/App-test.tsx`).
+- **Coverage**: Meliputi render komponen dan logika dasar.
 
-2. Start the app
+### 2. ✨ Animasi (Advanced UX)
+Penggunaan animasi canggih untuk pengalaman pengguna yang lebih hidup.
+- **Library**: `react-native-reanimated` untuk performa tinggi (60fps).
+- **Implementasi**:
+  - **Menu Screen**: Efek *Fade In Up* saat memuat daftar menu.
+  - **Detail Screen**: Transisi elemen UI yang halus.
+  - **Onboarding**: Animasi parallax dan transisi halaman.
 
-   ```bash
-   npx expo start
-   ```
+### 3. 🔐 Autentikasi & Navigasi
+Alur pengguna yang aman dan intuitif menggunakan **Expo Router**.
+- **Stack Navigation**: Perpindahan antar layar yang terkelola dengan baik.
+- **Logout Logic**: Logika logout yang aman, memastikan user diarahkan kembali ke layar utama (Onboarding) dan memutus akses "Back" ke halaman akun.
+- **Guest Mode**: Dukungan untuk pengguna tamu tanpa login.
 
-In the output, you'll find options to open the app in a
+### 4. 📱 Responsif & Modern UI
+- **Desain**: Tampilan bersih dengan palet warna kopi yang elegan.
+- **Komponen**: Penggunaan `FlatList` dan `ScrollView` yang optimal.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🛠️ Teknologi
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Core**: React Native, Expo SDK
+- **Language**: TypeScript
+- **Navigation**: Expo Router
+- **State Management**: React Context API
+- **Database**: Expo SQLite (untuk data lokal)
+- **Backend**: Firebase Integration
 
-## Get a fresh project
+## 🚀 Cara Menjalankan
 
-When you're ready, run:
+1.  **Instal Dependensi**:
+    ```bash
+    npm install
+    ```
 
-```bash
-npm run reset-project
-```
+2.  **Jalankan Aplikasi**:
+    ```bash
+    npx expo start
+    ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+3.  **Jalankan Testing**:
+    ```bash
+    npm run test
+    ```

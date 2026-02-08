@@ -13,6 +13,7 @@ import {
     TouchableOpacity,
     View
 } from 'react-native';
+import Animated, { FadeInUp } from 'react-native-reanimated';
 import { useApp } from '../context/AppContext';
 import { useOrder } from '../context/OrderContext';
 
@@ -86,7 +87,10 @@ export default function DetailScreen() {
                 </View>
 
                 {/* Main Content Area */}
-                <View style={[styles.contentArea, { backgroundColor: colors.background }]}>
+                <Animated.View
+                    entering={FadeInUp.springify().damping(20).mass(0.8)}
+                    style={[styles.contentArea, { backgroundColor: colors.background }]}
+                >
                     <View style={styles.dragHandle} />
 
                     <View style={styles.titleSection}>
@@ -150,7 +154,7 @@ export default function DetailScreen() {
                             </TouchableOpacity>
                         </View>
                     </View>
-                </View>
+                </Animated.View>
             </ScrollView>
 
             {/* Premium Action Bar */}

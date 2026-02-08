@@ -13,6 +13,7 @@ import {
     TouchableOpacity,
     View
 } from 'react-native';
+import Animated, { FadeInUp } from 'react-native-reanimated';
 import { MENU_API, MenuItem } from '../constants/data';
 import { useApp } from '../context/AppContext';
 import { useOrder } from '../context/OrderContext';
@@ -109,33 +110,38 @@ export default function MenuScreen() {
                         <Text style={{ color: colors.textSecondary }}>Menu tidak ditemukan...</Text>
                     </View>
                 )}
-                renderItem={({ item }) => (
-                    <TouchableOpacity
-                        style={[styles.card, { backgroundColor: colors.card }]}
-                        activeOpacity={0.9}
-                        onPress={() => router.push({
-                            pathname: '/detail',
-                            params: { ...item }
-                        })}
+                renderItem={({ item, index }) => (
+                    <Animated.View
+                        entering={FadeInUp.delay(index * 100).springify().damping(20).mass(0.5)}
+                        style={{ width: '48.2%', marginBottom: 20 }}
                     >
-                        <View style={styles.imageWrapper}>
-                            <Image source={{ uri: item.image }} style={styles.cardImg} />
-                            <View style={[styles.priceTag, { backgroundColor: colors.primary }]}>
-                                <Text style={styles.priceTagText}>Rp {item.price}</Text>
+                        <TouchableOpacity
+                            style={[styles.card, { backgroundColor: colors.card, width: '100%', marginBottom: 0 }]} // Width 100% of parent wrapper
+                            activeOpacity={0.9}
+                            onPress={() => router.push({
+                                pathname: '/detail',
+                                params: { ...item }
+                            })}
+                        >
+                            <View style={styles.imageWrapper}>
+                                <Image source={{ uri: item.image }} style={styles.cardImg} />
+                                <View style={[styles.priceTag, { backgroundColor: colors.primary }]}>
+                                    <Text style={styles.priceTagText}>Rp {item.price}</Text>
+                                </View>
                             </View>
-                        </View>
-                        <View style={styles.cardInfo}>
-                            <Text style={[styles.cardName, { color: colors.text }]} numberOfLines={1}>{item.name}</Text>
-                            <Text style={[styles.cardDesc, { color: colors.textSecondary }]} numberOfLines={1}>{item.desc}</Text>
-                            <TouchableOpacity
-                                style={[styles.addBtn, { backgroundColor: colors.primary }]}
-                                onPress={() => handleAddToCart(item)}
-                            >
-                                <Ionicons name="cart-outline" size={16} color="white" />
-                                <Text style={styles.addBtnText}>Add</Text>
-                            </TouchableOpacity>
-                        </View>
-                    </TouchableOpacity>
+                            <View style={styles.cardInfo}>
+                                <Text style={[styles.cardName, { color: colors.text }]} numberOfLines={1}>{item.name}</Text>
+                                <Text style={[styles.cardDesc, { color: colors.textSecondary }]} numberOfLines={1}>{item.desc}</Text>
+                                <TouchableOpacity
+                                    style={[styles.addBtn, { backgroundColor: colors.primary }]}
+                                    onPress={() => handleAddToCart(item)}
+                                >
+                                    <Ionicons name="cart-outline" size={16} color="white" />
+                                    <Text style={styles.addBtnText}>Add</Text>
+                                </TouchableOpacity>
+                            </View>
+                        </TouchableOpacity>
+                    </Animated.View>
                 )}
             />
         </SafeAreaView>
