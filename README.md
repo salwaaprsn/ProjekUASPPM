@@ -103,6 +103,7 @@ npx expo start
 ## 🔗 Link Terkait
 
 - **Video Demonstrasi:** [Tonton Demo](https://drive.google.com/drive/folders/1R_EMiC1kD78xMR1YTJfaoamC6dxoMDzx)
+- **Link Desain:** [Lihat Desain}(https://www.figma.com/design/oQYLkT9a9BtlSybkREkuRf/Field-Coffee?node-id=0-1&t=FaumNcB1zGtEuYUG-1)
 
 ---
 
